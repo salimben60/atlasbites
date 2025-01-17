@@ -1,92 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas Bites</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>Atlas Bites Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2 {
+            color: #d92332;
+        }
+        h2 {
+            border-bottom: 2px solid #d92332;
+            padding-bottom: 5px;
+        }
+        .section {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .price {
+            font-weight: bold;
+            color: #d92332;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .vegan {
+            color: green;
+            font-weight: bold;
+        }
+        .order-button {
+            display: inline-block;
+            background-color: #d92332;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .order-button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Atlas Bites</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#location">Location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary" href="https://order.getrevi.com/atlas-bites-1477"
-                            role="button">Order Now</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <header class="jumbotron text-center">
-        <div class="container">
-            <h1>Atlas Bites</h1>
-            <p>Mediterranean Halal on the Move</p>
-            <img src="placeholder-food-truck.jpg" alt="Food Truck" class="img-fluid rounded" style="max-width: 500px;">
-        </div>
-    </header>
+<div class="menu-container">
+    <h1>Atlas Bites</h1>
+    
+    <a href="https://order.getrevi.com/atlas-bites-1477" class="order-button" target="_blank">🛒 Order Online</a>
 
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We're Atlas Bites, bringing delicious and authentic Mediterranean Halal cuisine to the streets of San
-                Francisco. We use fresh, high-quality ingredients to create flavorful dishes that will transport your
-                taste buds.</p>
-        </div>
-    </section>
+    <h2>Wraps</h2>
+    <div class="section">
+        <div class="item"><span>Falafel <span class="vegan">*Vegetarian</span></span> <span class="price">$14.99</span></div>
+        <div class="item"><span>Chicken Shawarma <span class="note">Contains Garlic Spread</span></span> <span class="price">$15.49</span></div>
+        <div class="item"><span>Beef Shawarma</span> <span class="price">$16.49</span></div>
+    </div>
 
-    <section id="menu" class="py-5">
-        <div class="container">
-            <h2>Menu</h2>
-            <p>Sample Menu Items (Replace with your actual menu)</p>
-            <ul>
-                <li>Chicken Shawarma Wrap</li>
-                <li>Falafel Plate</li>
-                <li>Hummus with Pita</li>
-            </ul>
-        </div>
-    </section>
+    <h2>Bowls</h2>
+    <div class="section">
+        <div class="item"><span>Falafel (4 pieces) <span class="vegan">🌱 VEGAN</span></span> <span class="price">$14.99</span></div>
+        <div class="item"><span>Chicken Shawarma</span> <span class="price">$15.49</span></div>
+        <div class="item"><span>Beef Shawarma</span> <span class="price">$16.49</span></div>
+    </div>
 
-    <section id="location" class="py-5 bg-light">
-        <div class="container">
-            <h2>Location & Schedule</h2>
-            <p>Check our social media for our daily location and schedule updates!</p>
-            <p>(Or embed a map here)</p>
-        </div>
-    </section>
+    <h2>Plates</h2>
+    <div class="section">
+        <div class="item"><span>Falafel (4 pieces) <span class="vegan">🌱 VEGAN</span></span> <span class="price">$19.99</span></div>
+        <div class="item"><span>Chicken Shawarma</span> <span class="price">$20.99</span></div>
+        <div class="item"><span>Beef Shawarma</span> <span class="price">$21.99</span></div>
+    </div>
 
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: info@atlasbites.com</p>
-            <p>Follow us on social media!</p>
-        </div>
-    </section>
+    <h2>Side Dishes</h2>
+    <div class="section">
+        <div class="item"><span>Zaalouk <span class="note">Traditional Moroccan roasted eggplant & tomatoes, served with pita bread</span></span> <span class="price">$6.99</span></div>
+        <div class="item"><span>Taktouka <span class="note">Traditional Moroccan roasted peppers & tomatoes, served with pita bread</span></span> <span class="price">$6.99</span></div>
+        <div class="item"><span>Moroccan Lentil Soup</span> <span class="price">$5.99</span></div>
+        <div class="item"><span>Atlas Salad</span> <span class="price">$5.99</span></div>
+        <div class="item"><span>Hummus <span class="note">Served with pita bread</span></span> <span class="price">$5.99</span></div>
+        <div class="item"><span>Falafel (3 pcs) <span class="note">Contains flour</span></span> <span class="price">$6.99</span></div>
+    </div>
 
-    <footer class="py-3 bg-dark text-white text-center">
-        <div class="container">
-            <p>&copy;
+    <h2>Extras</h2>
+    <div class="section">
+        <div class="item"><span>Pita</span> <span class="price">$0.99</span></div>
+        <div class="item"><span>Soda</span> <span class="price">$2.99</span></div>
+        <div class="item"><span>Water</span> <span class="price">$2.49</span></div>
+    </div>
+
+    <h2>Follow Us</h2>
+    <p>📸 <strong>@atlas_bites</strong></p>
+</div>
+
+</body>
+</html>
