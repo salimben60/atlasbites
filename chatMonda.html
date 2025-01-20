@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas Bites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Dancing Script', cursive;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .hero {
+            background: url('https://atlasbitesfoodtruck.com/wp-content/uploads/2024/07/Ext.jpeg') center/cover no-repeat;
+            color: white;
+            padding: 150px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .menu-card {
+            border: none;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .menu-card h3 {
+            color: #e67e22;
+        }
+        .btn-order {
+            background-color: #ff5733;
+            border: none;
+            font-size: 1.2rem;
+        }
+        .btn-order:hover {
+            background-color: #e74c3c;
+        }
+        footer {
+            background: #111;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Atlas Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Atlas Bites</h1>
+            <p>Spreading Freshness, Bite by bite!</p>
+            <a href="https://order.getrevi.com/atlas-bites-1477" class="btn btn-order btn-lg">Order Online</a>
+        </div>
+    </header>
+
+    <section id="menu" class="container my-5">
+        <h2 class="text-center">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="menu-card p-3">
+                    <h3>Wraps</h3>
+                    <p>Served with rice, tahini sauce, and fresh veggies.</p>
+                    <ul>
+                        <li>Falafel (Vegetarian)</li>
+                        <li>Chicken Shawarma</li>
+                        <li>Beef Shawarma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card p-3">
+                    <h3>Bowls</h3>
+                    <p>Fresh ingredients served over flavorful rice.</p>
+                    <ul>
+                        <li>Falafel (4 pieces)</li>
+                        <li>Chicken Shawarma</li>
+                        <li>Beef Shawarma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-card p-3">
+                    <h3>Plates</h3>
+                    <p>Includes rice, pickles, and tahini sauce.</p>
+                    <ul>
+                        <li>Falafel (4 pieces)</li>
+                        <li>Chicken Shawarma</li>
+                        <li>Beef Shawarma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container my-5">
+        <h2 class="text-center">Gallery</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://atlasbitesfoodtruck.com/wp-content/uploads/2024/10/PXL_20240929_0123244415.jpg" alt="Dish 1" class="img-fluid rounded mb-3">
+            </div>
+            <div class="col-md-4">
+                <img src="https://atlasbitesfoodtruck.com/wp-content/uploads/2024/10/PXL_20240811_2122103394-1320x1753.jpg" alt="Dish 2" class="img-fluid rounded mb-3">
+            </div>
+            <div class="col-md-4">
+                <img src="https://atlasbitesfoodtruck.com/wp-content/uploads/2024/10/PXL_20240929_0123244415.jpg" alt="Dish 3" class="img-fluid rounded mb-3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 Atlas Bites. All Rights Reserved.</p>
+            <p><a href="https://www.google.com/maps/place/Atlas+Bites/@37.7707821,-122.3940148,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7ff0ec2d5685:0x342c058bae33bd88!8m2!3d37.7707779!4d-122.3914399!16s%2Fg%2F11y5wcykhs?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Find Us</a> | Follow us on <a href="https://www.instagram.com/atlas_bites/ ">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
