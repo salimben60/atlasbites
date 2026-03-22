@@ -1,0 +1,53 @@
+/*
+ * Styles for Atlas Bites Project
+ *
+ * This file contains all the CSS styles for the project. Organized in sections
+ * with comments for easier understanding and maintainability.
+ */
+
+/* Color Variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #2c3e50;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design Rules */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Component Styles */
+.header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    animation: fade-in 0.5s;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.button {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
