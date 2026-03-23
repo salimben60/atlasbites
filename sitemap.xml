@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ─── MAIN PAGE ─── -->
+  <url>
+    <loc>https://www.atlasbitesfoodtruck.com/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ─── MENU PDF ─── -->
+  <url>
+    <loc>https://www.atlasbitesfoodtruck.com/assets/AtlasBitesMenu.pdf</loc>
+    <lastmod>2026-03-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.atlasbitesfoodtruck.com/sitemap.xml
