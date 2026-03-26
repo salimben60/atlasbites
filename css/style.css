@@ -49,7 +49,7 @@ h1, h2, h3 {
 
 /* ─── HERO ─── */
         .hero {
-            background: url('assets/TruckPic.jpg') center/cover no-repeat;
+            background: url('assets/truckPic.webp') center/cover no-repeat;
             min-height: 92vh;
             display: flex;
             align-items: center;
