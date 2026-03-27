@@ -18,38 +18,55 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CateringService",
-      "name": "Atlas Bites Mediterranean Catering",
-      "description": "Mediterranean corporate catering in San Francisco specializing in office lunches and events.",
-      "url": "https://www.atlasbitesfoodtruck.com",
-      "telephone": "(415) 980-7626",
-      "priceRange": "$$",
-      "servesCuisine": ["Mediterranean", "Middle Eastern", "Halal", "Vegetarian", "Vegan"],
-      "areaServed": ["San Francisco", "Mission Bay", "SOMA", "Financial District"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "San Francisco",
-        "addressRegion": "CA",
-        "postalCode": "94158",
-        "addressCountry": "US"
+      "@type": "Service",
+      "name": "Mediterranean Corporate Catering",
+      "serviceType": "Catering Service",
+      "description": "Premium Mediterranean corporate catering in San Francisco specializing in office lunches and large-scale events.",
+      "provider": {
+        "@type": "CateringService",
+        "name": "Atlas Bites Mediterranean Catering",
+        "url": "https://www.atlasbitesfoodtruck.com",
+        "telephone": "(415) 980-7626",
+        "priceRange": "$$",
+        "image": "https://www.atlasbitesfoodtruck.com/logo.png", 
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "postalCode": "94158",
+          "addressCountry": "US"
+        }
       },
+      "areaServed": [
+        { "@type": "City", "name": "San Francisco" },
+        { "@type": "City", "name": "Mission Bay" },
+        { "@type": "City", "name": "SOMA" }
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "200"
+        "reviewCount": "214",
+        "bestRating": "5",
+        "worstRating": "1"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Catering Packages",
-        "itemListElement": [{
-          "@type": "Offer",
-          "itemOffered": {"@type": "Service", "name": "Corporate Lunch Catering"},
-          "price": "12",
-          "priceCurrency": "USD"
-        }]
+        "name": "Catering Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Corporate Lunch Catering"
+            },
+            "price": "12.00",
+            "priceCurrency": "USD"
+          }
+        ]
       }
     }
-    </script>
+</script>
+    
 <!--
     <style>
         :root {
