@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3B5WCE3YF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Y3B5WCE3YF');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Mediterranean Corporate Catering San Francisco | Atlas Bites – Mission Bay & SOMA</title>
     <meta name="description" content="Fresh Mediterranean catering for SF corporate events & office lunches. Wraps, bowls & platters from $12/person. Gluten-free, vegan & halal options. Mission Bay, SOMA, FiDi. 4.9★ • 2-hour quotes.">
+    <link rel="canonical" href="https://www.atlasbitesfoodtruck.com/">
 
-   <script type="application/ld+json">
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="restaurant.menu">
+    <meta property="og:title" content="Mediterranean Corporate Catering San Francisco | Atlas Bites">
+    <meta property="og:description" content="Fresh Mediterranean catering for SF corporate events & office lunches. Wraps, bowls & platters from $12/person. Gluten-free, vegan & halal options.">
+    <meta property="og:url" content="https://www.atlasbitesfoodtruck.com/">
+    <meta property="og:image" content="https://www.atlasbitesfoodtruck.com/assets/gallery/hero-spread.webp">
+    <meta property="og:site_name" content="Atlas Bites">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mediterranean Corporate Catering San Francisco | Atlas Bites">
+    <meta name="twitter:description" content="Fresh Mediterranean catering for SF corporate events & office lunches. Wraps, bowls & platters from $12/person.">
+    <meta name="twitter:image" content="https://www.atlasbitesfoodtruck.com/assets/gallery/hero-spread.webp">
+
+    <!-- Connection warm-up for third-party origins used below -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
+    <!-- Prioritize the hero background image (LCP element) -->
+    <link rel="preload" as="image" href="assets/truckPic.webp">
+
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Mediterranean Catering Service",
-      "image": "https://www.atlasbitesfoodtruck.com/logo.png",
-      "description": "Premium Mediterranean corporate catering in San Francisco.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Atlas Bites"
+      "@type": "FoodEstablishment",
+      "name": "Atlas Bites",
+      "image": "https://www.atlasbitesfoodtruck.com/assets/gallery/hero-spread.webp",
+      "description": "Mediterranean food truck and corporate catering serving San Francisco's Mission Bay, SOMA, and surrounding neighborhoods.",
+      "url": "https://www.atlasbitesfoodtruck.com/",
+      "servesCuisine": "Mediterranean",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94158",
+        "addressCountry": "US"
       },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://www.atlasbitesfoodtruck.com",
-        "priceCurrency": "USD",
-        "price": "12.00",
-        "availability": "https://schema.org/InStock"
-      },
+      "areaServed": ["Mission Bay", "SOMA", "Financial District", "Dogpatch", "Potrero Hill", "Civic Center"],
+      "menu": "https://www.atlasbitesfoodtruck.com/assets/AtlasBitesMenu.pdf",
+      "sameAs": ["https://www.instagram.com/atlas_bites/"],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -41,8 +63,15 @@
         "ratingCount": "214"
       }
     }
-</script>
-    
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3B5WCE3YF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y3B5WCE3YF');
+    </script>
 
     <style>
         :root {
@@ -79,10 +108,12 @@
 
     <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- ═══════════════════════════════════════════════
          NAVBAR
     ═══════════════════════════════════════════════ -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="#">Atlas Bites</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -105,6 +136,7 @@
     <!-- ═══════════════════════════════════════════════
          HERO
     ═══════════════════════════════════════════════ -->
+    <main id="main-content">
     <header class="hero">
         <div class="hero-content">
             <span class="hero-eyebrow">San Francisco's #1 Mediterranean Food Truck</span>
@@ -324,13 +356,13 @@
                         <h3 style="font-size:1.5rem; margin-bottom:24px; color:var(--dark);">Get Your Free Catering Quote</h3>
                         <form action="https://formspree.io/f/mkoqgypq" method="POST">
                             <div class="mb-3">
-                                <label class="form-label">Company / Organization Name *</label>
-                                <input type="text" name="company" class="form-control" placeholder="e.g. Salesforce, UCSF, Jane's Wedding" required>
+                                <label class="form-label" for="f-company">Company / Organization Name *</label>
+                                <input id="f-company" type="text" name="company" class="form-control" placeholder="e.g. Salesforce, UCSF, Jane's Wedding" required>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Event Type *</label>
-                                <select name="event_type" class="form-control form-select" required>
+                                <label class="form-label" for="f-event-type">Event Type *</label>
+                                <select id="f-event-type" name="event_type" class="form-control form-select" required>
                                     <option value="" disabled selected>Select event type…</option>
                                     <option>Corporate Office Lunch</option>
                                     <option>Company All-Hands / Town Hall</option>
@@ -344,12 +376,12 @@
 
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label">Event Date *</label>
-                                    <input type="date" name="event_date" class="form-control" required>
+                                    <label class="form-label" for="f-event-date">Event Date *</label>
+                                    <input id="f-event-date" type="date" name="event_date" class="form-control" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label">Estimated Guests *</label>
-                                    <select name="guest_count" class="form-control form-select" required>
+                                    <label class="form-label" for="f-guests">Estimated Guests *</label>
+                                    <select id="f-guests" name="guest_count" class="form-control form-select" required>
                                         <option value="" disabled selected>Select range…</option>
                                         <option>20–50 guests</option>
                                         <option>51–100 guests</option>
@@ -361,23 +393,23 @@
 
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label">Your Name *</label>
-                                    <input type="text" name="contact_name" class="form-control" placeholder="First Last" required>
+                                    <label class="form-label" for="f-name">Your Name *</label>
+                                    <input id="f-name" type="text" name="contact_name" class="form-control" placeholder="First Last" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label">Phone Number</label>
-                                    <input type="tel" name="phone" class="form-control" placeholder="(415) 980-7626">
+                                    <label class="form-label" for="f-phone">Phone Number</label>
+                                    <input id="f-phone" type="tel" name="phone" class="form-control" placeholder="(415) 980-7626">
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Contact Email *</label>
-                                <input type="email" name="email" class="form-control" required>
+                                <label class="form-label" for="f-email">Contact Email *</label>
+                                <input id="f-email" type="email" name="email" class="form-control" required>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Budget Range</label>
-                                <select name="budget" class="form-control form-select">
+                                <label class="form-label" for="f-budget">Budget Range</label>
+                                <select id="f-budget" name="budget" class="form-control form-select">
                                     <option value="" disabled selected>Approximate budget (optional)</option>
                                     <option>Under $500</option>
                                     <option>$500–$1,500</option>
@@ -387,8 +419,8 @@
                             </div>
 
                             <div class="mb-4">
-                                <label class="form-label">Dietary Needs & Notes</label>
-                                <textarea name="message" class="form-control" rows="3" placeholder="e.g. 30% vegan, nut allergy, need staffing, delivery to 3rd floor…"></textarea>
+                                <label class="form-label" for="f-message">Dietary Needs & Notes</label>
+                                <textarea id="f-message" name="message" class="form-control" rows="3" placeholder="e.g. 30% vegan, nut allergy, need staffing, delivery to 3rd floor…"></textarea>
                             </div>
 
                             <!-- Honeypot spam field -->
@@ -466,27 +498,27 @@
             </div>
             <div class="gallery-grid reveal">
                 <div class="gallery-item">
-                    <img src="assets/U/uberMain.jpeg" alt="Mediterranean catering spread for San Francisco corporate event" loading="lazy" width="400" height="300">
+                    <img src="assets/gallery/hero-spread.webp" alt="Mediterranean catering spread for San Francisco corporate event" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/U/U-BowlFalafel.jpeg" alt="Falafel bowl catering for San Francisco office lunch" loading="lazy" width="400" height="300">
+                    <img src="assets/gallery/bowl-falafel.webp" alt="Falafel bowl catering for San Francisco office lunch" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/U/U-WrapChicken.jpeg" alt="Chicken shawarma wrap catering Mission Bay SF" loading="lazy" width="400" height="300">
+                    <img src="assets/gallery/wrap-chicken.webp" alt="Chicken shawarma wrap catering Mission Bay SF" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/U/U-Taktouka.jpeg" alt="Taktouka Mediterranean side dish SF catering" loading="lazy" width="400" height="300">
+                    <img src="assets/gallery/taktouka.webp" alt="Taktouka Mediterranean side dish SF catering" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/U/U-PlateFalafel.jpeg" alt="Falafel plate corporate catering San Francisco" loading="lazy" width="400" height="300">
+                    <img src="assets/gallery/plate-falafel.webp" alt="Falafel plate corporate catering San Francisco" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/U/U-BowlChicken.jpeg" alt="Chicken shawarma bowl SOMA event catering SF" loading="lazy" width="400" height="300">
+                    <img src="assets/gallery/bowl-chicken.webp" alt="Chicken shawarma bowl SOMA event catering SF" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
             </div>
@@ -547,6 +579,8 @@
             </p>
         </div>
     </section>
+
+    </main>
 
     <!-- ═══════════════════════════════════════════════
          FOOTER
