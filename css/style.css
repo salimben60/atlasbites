@@ -1,6 +1,22 @@
 /* ─── GLOBAL & BASE ─── */
 * { box-sizing: border-box; }
 
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 2000;
+    background: var(--spice);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 0 0 6px 0;
+    font-weight: 700;
+    text-decoration: none;
+}
+.skip-link:focus {
+    left: 0;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
     background: var(--cream);
