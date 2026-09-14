@@ -67,45 +67,131 @@
           {
             "@type": "MenuSection",
             "name": "Wraps",
-            "description": "Individual favorites, comes with hummus, tomatoes, red onions, pickles, tahini sauce & sumac.",
+            "description": "Comes with hummus, tomatoes, red onions, pickles, tahini sauce & sumac.",
             "hasMenuItem": [
               {
                 "@type": "MenuItem",
                 "name": "Falafel Wrap",
-                "suitableForDiet": "https://schema.org/VegetarianDiet"
+                "suitableForDiet": "https://schema.org/VegetarianDiet",
+                "offers": { "@type": "Offer", "price": "14.99", "priceCurrency": "USD" }
               },
-              { "@type": "MenuItem", "name": "Chicken Shawarma Wrap" },
-              { "@type": "MenuItem", "name": "Beef Shawarma Wrap" }
+              {
+                "@type": "MenuItem",
+                "name": "Chicken Shawarma Wrap",
+                "description": "Contains garlic spread.",
+                "offers": { "@type": "Offer", "price": "15.49", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Beef Shawarma Wrap",
+                "offers": { "@type": "Offer", "price": "16.49", "priceCurrency": "USD" }
+              }
             ]
           },
           {
             "@type": "MenuSection",
             "name": "Bowls",
-            "description": "High-protein bowls served over rice with tomatoes, onions, pickles, tahini sauce & sumac.",
+            "description": "Served over rice with tomatoes, onions, pickles, tahini sauce & sumac.",
             "hasMenuItem": [
               {
                 "@type": "MenuItem",
                 "name": "Falafel Bowl",
-                "description": "4 pieces of falafel",
-                "suitableForDiet": "https://schema.org/VegetarianDiet"
+                "description": "4 pieces of falafel.",
+                "suitableForDiet": "https://schema.org/VeganDiet",
+                "offers": { "@type": "Offer", "price": "14.99", "priceCurrency": "USD" }
               },
-              { "@type": "MenuItem", "name": "Chicken Shawarma Bowl" },
-              { "@type": "MenuItem", "name": "Beef Shawarma Bowl" }
+              {
+                "@type": "MenuItem",
+                "name": "Chicken Shawarma Bowl",
+                "offers": { "@type": "Offer", "price": "15.49", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Beef Shawarma Bowl",
+                "offers": { "@type": "Offer", "price": "16.49", "priceCurrency": "USD" }
+              }
             ]
           },
           {
             "@type": "MenuSection",
             "name": "Plates",
-            "description": "Full platters served over rice with tahini sauce & sumac, comes with 2 side dishes.",
+            "description": "Served over rice with tahini sauce & sumac. Comes with 2 side dishes.",
             "hasMenuItem": [
               {
                 "@type": "MenuItem",
                 "name": "Falafel Plate",
-                "description": "4 pieces of falafel",
-                "suitableForDiet": "https://schema.org/VegetarianDiet"
+                "description": "4 pieces of falafel.",
+                "suitableForDiet": "https://schema.org/VeganDiet",
+                "offers": { "@type": "Offer", "price": "19.99", "priceCurrency": "USD" }
               },
-              { "@type": "MenuItem", "name": "Chicken Shawarma Plate" },
-              { "@type": "MenuItem", "name": "Beef Shawarma Plate" }
+              {
+                "@type": "MenuItem",
+                "name": "Chicken Shawarma Plate",
+                "offers": { "@type": "Offer", "price": "20.99", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Beef Shawarma Plate",
+                "offers": { "@type": "Offer", "price": "21.99", "priceCurrency": "USD" }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Side Dishes",
+            "description": "All side dishes are vegan unless noted.",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Zaalouk",
+                "description": "Traditional Moroccan dish of roasted eggplant and tomatoes seasoned with garlic & olive oil. Served with pita bread.",
+                "suitableForDiet": "https://schema.org/VeganDiet",
+                "offers": { "@type": "Offer", "price": "6.99", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Taktouka",
+                "description": "Traditional Moroccan dish of roasted peppers and tomatoes seasoned with garlic & olive oil. Served with pita bread.",
+                "suitableForDiet": "https://schema.org/VeganDiet",
+                "offers": { "@type": "Offer", "price": "6.99", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Lentil Soup",
+                "description": "Lentils and carrots cooked with tomatoes, onions & garlic.",
+                "suitableForDiet": "https://schema.org/VeganDiet",
+                "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Atlas Salad",
+                "description": "Tomatoes, cucumbers, lettuce, red onions, pickles & olive oil.",
+                "suitableForDiet": "https://schema.org/VeganDiet",
+                "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Hummus",
+                "description": "Blend of garbanzo beans with olive oil, lemon juice & tahini sauce, garnished with sumac. Served with pita bread.",
+                "suitableForDiet": "https://schema.org/VeganDiet",
+                "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD" }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Falafel (Side)",
+                "description": "3 pieces with tahini sauce. Contains flour.",
+                "suitableForDiet": "https://schema.org/VegetarianDiet",
+                "offers": { "@type": "Offer", "price": "6.99", "priceCurrency": "USD" }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Extras",
+            "hasMenuItem": [
+              { "@type": "MenuItem", "name": "Pita", "offers": { "@type": "Offer", "price": "0.99", "priceCurrency": "USD" } },
+              { "@type": "MenuItem", "name": "Soda", "offers": { "@type": "Offer", "price": "2.99", "priceCurrency": "USD" } },
+              { "@type": "MenuItem", "name": "Water", "offers": { "@type": "Offer", "price": "2.49", "priceCurrency": "USD" } }
             ]
           }
         ]
