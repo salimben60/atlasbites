@@ -39,6 +39,15 @@ h1, h2, h3 {
     font-size: 1.7rem;
     color: var(--sand) !important;
     letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-brand-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 .nav-link {
     color: #c9b99a !important;
@@ -563,12 +572,24 @@ footer .divider {
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
-    #mobile-cta { display: flex; }
-    body { padding-bottom: 72px; }
+    #mobile-cta {
+        display: flex;
+        padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    }
+    body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
     .intro-stats { grid-template-columns: repeat(2, 1fr); }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .form-card { padding: 28px 20px; }
+    /* Serve a smaller hero image to phones to cut mobile data/load time */
+    .hero { background-image: url('assets/truckPic-mobile.webp'); }
+    .hero { min-height: 100vh; padding: 110px 18px 70px; }
+    .navbar-brand { font-size: 1.4rem; }
+    .navbar-brand-icon { width: 30px; height: 30px; }
+    .form-control, .form-select, .btn-submit, .btn-nav-order {
+        min-height: 44px; /* comfortable tap targets */
+    }
 }
 @media (max-width: 480px) {
     .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: clamp(2.4rem, 9vw, 3.2rem); }
 }

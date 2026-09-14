@@ -13,18 +13,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1208">
 
     <!-- Open Graph / social sharing -->
     <meta property="og:type" content="restaurant.menu">
     <meta property="og:title" content="Mediterranean Corporate Catering San Francisco | Atlas Bites">
     <meta property="og:description" content="Fresh Mediterranean catering for SF corporate events & office lunches. Wraps, bowls & platters from $12/person. Gluten-free, vegan & halal options.">
     <meta property="og:url" content="https://www.atlasbitesfoodtruck.com/">
-    <meta property="og:image" content="https://www.atlasbitesfoodtruck.com/assets/gallery/hero-spread.webp">
+    <meta property="og:image" content="https://www.atlasbitesfoodtruck.com/assets/logo/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Atlas Bites">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mediterranean Corporate Catering San Francisco | Atlas Bites">
     <meta name="twitter:description" content="Fresh Mediterranean catering for SF corporate events & office lunches. Wraps, bowls & platters from $12/person.">
-    <meta name="twitter:image" content="https://www.atlasbitesfoodtruck.com/assets/gallery/hero-spread.webp">
+    <meta name="twitter:image" content="https://www.atlasbitesfoodtruck.com/assets/logo/og-image.jpg">
 
     <!-- Connection warm-up for third-party origins used below -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +45,7 @@
       "@type": "FoodEstablishment",
       "name": "Atlas Bites",
       "image": "https://www.atlasbitesfoodtruck.com/assets/gallery/hero-spread.webp",
+      "logo": "https://www.atlasbitesfoodtruck.com/assets/logo/atlas-bites-logo.png",
       "description": "Mediterranean food truck and corporate catering serving San Francisco's Mission Bay, SOMA, and surrounding neighborhoods.",
       "url": "https://www.atlasbitesfoodtruck.com/",
       "servesCuisine": "Mediterranean",
@@ -54,6 +59,72 @@
       },
       "areaServed": ["Mission Bay", "SOMA", "Financial District", "Dogpatch", "Potrero Hill", "Civic Center"],
       "menu": "https://www.atlasbitesfoodtruck.com/assets/AtlasBitesMenu.pdf",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Atlas Bites Menu",
+        "url": "https://www.atlasbitesfoodtruck.com/#menu",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Wraps",
+            "description": "Individual favorites, comes with hummus, tomatoes, red onions, pickles, tahini sauce & sumac.",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Falafel Wrap",
+                "suitableForDiet": "https://schema.org/VegetarianDiet"
+              },
+              { "@type": "MenuItem", "name": "Chicken Shawarma Wrap" },
+              { "@type": "MenuItem", "name": "Beef Shawarma Wrap" }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Bowls",
+            "description": "High-protein bowls served over rice with tomatoes, onions, pickles, tahini sauce & sumac.",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Falafel Bowl",
+                "description": "4 pieces of falafel",
+                "suitableForDiet": "https://schema.org/VegetarianDiet"
+              },
+              { "@type": "MenuItem", "name": "Chicken Shawarma Bowl" },
+              { "@type": "MenuItem", "name": "Beef Shawarma Bowl" }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Plates",
+            "description": "Full platters served over rice with tahini sauce & sumac, comes with 2 side dishes.",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Falafel Plate",
+                "description": "4 pieces of falafel",
+                "suitableForDiet": "https://schema.org/VegetarianDiet"
+              },
+              { "@type": "MenuItem", "name": "Chicken Shawarma Plate" },
+              { "@type": "MenuItem", "name": "Beef Shawarma Plate" }
+            ]
+          }
+        ]
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Corporate Catering",
+        "description": "Wraps, bowls & platters for 20-200+ guests. Minimum 20 guests.",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "12.00",
+          "priceCurrency": "USD",
+          "unitText": "per person",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "minValue": 20
+          }
+        }
+      },
       "sameAs": ["https://www.instagram.com/atlas_bites/"],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -115,7 +186,10 @@
     ═══════════════════════════════════════════════ -->
     <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">Atlas Bites</a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo/navbar-icon.png" alt="" width="36" height="36" class="navbar-brand-icon">
+                Atlas Bites
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 style="border-color:rgba(255,255,255,0.3);">
                 <span class="navbar-toggler-icon" style="filter:invert(1);"></span>
@@ -498,27 +572,27 @@
             </div>
             <div class="gallery-grid reveal">
                 <div class="gallery-item">
-                    <img src="assets/gallery/hero-spread.webp" alt="Mediterranean catering spread for San Francisco corporate event" loading="lazy" width="900" height="720">
+                    <img src="assets/gallery/hero-spread.webp" srcset="assets/gallery/mobile/hero-spread.webp 480w, assets/gallery/hero-spread.webp 900w" sizes="(max-width: 768px) 50vw, 33vw" alt="Mediterranean catering spread for San Francisco corporate event" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/gallery/bowl-falafel.webp" alt="Falafel bowl catering for San Francisco office lunch" loading="lazy" width="900" height="720">
+                    <img src="assets/gallery/bowl-falafel.webp" srcset="assets/gallery/mobile/bowl-falafel.webp 480w, assets/gallery/bowl-falafel.webp 900w" sizes="(max-width: 768px) 50vw, 33vw" alt="Falafel bowl catering for San Francisco office lunch" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/gallery/wrap-chicken.webp" alt="Chicken shawarma wrap catering Mission Bay SF" loading="lazy" width="900" height="720">
+                    <img src="assets/gallery/wrap-chicken.webp" srcset="assets/gallery/mobile/wrap-chicken.webp 480w, assets/gallery/wrap-chicken.webp 900w" sizes="(max-width: 768px) 50vw, 33vw" alt="Chicken shawarma wrap catering Mission Bay SF" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/gallery/taktouka.webp" alt="Taktouka Mediterranean side dish SF catering" loading="lazy" width="900" height="720">
+                    <img src="assets/gallery/taktouka.webp" srcset="assets/gallery/mobile/taktouka.webp 480w, assets/gallery/taktouka.webp 900w" sizes="(max-width: 768px) 50vw, 33vw" alt="Taktouka Mediterranean side dish SF catering" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/gallery/plate-falafel.webp" alt="Falafel plate corporate catering San Francisco" loading="lazy" width="900" height="720">
+                    <img src="assets/gallery/plate-falafel.webp" srcset="assets/gallery/mobile/plate-falafel.webp 480w, assets/gallery/plate-falafel.webp 900w" sizes="(max-width: 768px) 50vw, 33vw" alt="Falafel plate corporate catering San Francisco" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/gallery/bowl-chicken.webp" alt="Chicken shawarma bowl SOMA event catering SF" loading="lazy" width="900" height="720">
+                    <img src="assets/gallery/bowl-chicken.webp" srcset="assets/gallery/mobile/bowl-chicken.webp 480w, assets/gallery/bowl-chicken.webp 900w" sizes="(max-width: 768px) 50vw, 33vw" alt="Chicken shawarma bowl SOMA event catering SF" loading="lazy" width="900" height="720">
                     <div class="gallery-overlay"></div>
                 </div>
             </div>

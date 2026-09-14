@@ -1,0 +1,26 @@
+{
+  "name": "Atlas Bites - Mediterranean Food Truck",
+  "short_name": "Atlas Bites",
+  "description": "Mediterranean food truck and corporate catering in San Francisco.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1208",
+  "theme_color": "#C8440A",
+  "icons": [
+    {
+      "src": "assets/icons/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
