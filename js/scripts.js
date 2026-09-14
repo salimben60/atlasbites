@@ -16,20 +16,10 @@ const observer = new IntersectionObserver((entries) => {
 revealEls.forEach(el => observer.observe(el));
 
 // ─── Mobile sticky bar ───
-function updateMobileCTA() {
-    const bar = document.getElementById('mobile-cta');
-    if (window.innerWidth < 768) {
-        bar.style.display = 'flex';
-        document.body.style.paddingBottom = '72px';
-    } else {
-        bar.style.display = 'none';
-        document.body.style.paddingBottom = '0';
-    }
-}
-
-// Run on load and resize
-updateMobileCTA();
-window.addEventListener('resize', updateMobileCTA);
+// Handled entirely by CSS (@media max-width:768px in style.css) — no JS needed.
+// (Previously duplicated here via inline styles, which both forced a layout
+// reflow on every resize and silently overrode the safe-area-inset padding
+// set in CSS, since inline styles win over media queries.)
 
 // ─── Form success feedback ───
 const form = document.querySelector('form');
