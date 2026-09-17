@@ -1,6 +1,115 @@
 /* ─── GLOBAL & BASE ─── */
 * { box-sizing: border-box; }
 
+/* ═══════════════════════════════════════════════
+   MINIMAL GRID & UTILITY LAYER
+   Replaces Bootstrap 5's grid/utilities/navbar-collapse.
+   Every visual style (colors, buttons, forms, nav) below
+   is already fully custom — this section only replicates
+   the small slice of Bootstrap's *structural* behavior
+   actually used on this page (grid math, flex/spacing
+   utilities, and the mobile nav toggle), so the full
+   ~250KB Bootstrap CSS+JS bundle is no longer needed.
+   ═══════════════════════════════════════════════ */
+a { text-decoration: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+.container { width: 100%; margin-inline: auto; padding-inline: 0.75rem; }
+@media (min-width: 576px)  { .container { max-width: 540px; } }
+@media (min-width: 768px)  { .container { max-width: 720px; } }
+@media (min-width: 992px)  { .container { max-width: 960px; } }
+@media (min-width: 1200px) { .container { max-width: 1140px; } }
+
+.row { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 1.5rem; row-gap: 0; }
+.row.g-2 { gap: 0.5rem; }
+.row.g-3 { gap: 1rem; }
+.row.g-4 { gap: 1.5rem; }
+.row.g-5 { gap: 3rem; }
+
+.col-md-3, .col-md-4, .col-md-6,
+.col-lg-2, .col-lg-5, .col-lg-6, .col-lg-7 { grid-column: 1 / -1; }
+.col-6 { grid-column: span 6; }
+@media (min-width: 768px) {
+    .col-md-3 { grid-column: span 3; }
+    .col-md-4 { grid-column: span 4; }
+    .col-md-6 { grid-column: span 6; }
+}
+@media (min-width: 992px) {
+    .col-lg-2 { grid-column: span 2; }
+    .col-lg-5 { grid-column: span 5; }
+    .col-lg-6 { grid-column: span 6; }
+    .col-lg-7 { grid-column: span 7; }
+    .ms-lg-3  { margin-left: 1rem; }
+    .gap-lg-2 { gap: 0.5rem; }
+}
+
+.d-flex { display: flex; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
+.align-items-start { align-items: flex-start; }
+.text-center { text-align: center; }
+.mx-auto { margin-inline: auto; }
+.ms-auto { margin-left: auto; }
+.gap-3 { gap: 1rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+.mt-4 { margin-top: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+.px-4 { padding-inline: 1.5rem; }
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    background: transparent;
+}
+.form-control, .form-select { display: block; width: 100%; }
+
+.navbar, .navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.fixed-top { position: fixed; top: 0; left: 0; right: 0; z-index: 1030; }
+
+.navbar-toggler {
+    display: block;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    line-height: 1;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.navbar-collapse { flex-basis: 100%; flex-grow: 1; align-items: center; }
+.navbar-collapse:not(.show) { display: none; }
+.navbar-nav { display: flex; flex-direction: column; margin-bottom: 0; }
+@media (max-width: 991.98px) {
+    .navbar-nav { width: 100%; padding: 1rem 0; gap: 0.75rem; }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler { display: none; }
+    .navbar-expand-lg .navbar-collapse { display: flex !important; flex-basis: auto; }
+    .navbar-expand-lg .navbar-nav { flex-direction: row; }
+}
+
 .skip-link {
     position: absolute;
     left: -9999px;
@@ -74,7 +183,7 @@ h1, h2, h3 {
 
 /* ─── HERO ─── */
         .hero {
-            background: url('assets/truckPic.webp') center/cover no-repeat;
+            background: url('../assets/truckPic.webp') center/cover no-repeat;
             min-height: 92vh;
             display: flex;
             align-items: center;
@@ -581,7 +690,7 @@ footer .divider {
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .form-card { padding: 28px 20px; }
     /* Serve a smaller hero image to phones to cut mobile data/load time */
-    .hero { background-image: url('assets/truckPic-mobile.webp'); }
+    .hero { background-image: url('../assets/truckPic-mobile.webp'); }
     .hero { min-height: 100vh; padding: 110px 18px 70px; }
     .navbar-brand { font-size: 1.4rem; }
     .navbar-brand-icon { width: 30px; height: 30px; }

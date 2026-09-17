@@ -21,6 +21,23 @@ revealEls.forEach(el => observer.observe(el));
 // reflow on every resize and silently overrode the safe-area-inset padding
 // set in CSS, since inline styles win over media queries.)
 
+// ─── Mobile nav toggle (replaces Bootstrap's collapse component) ───
+const navToggler = document.querySelector('.navbar-toggler');
+const navCollapse = document.getElementById('navbarNav');
+if (navToggler && navCollapse) {
+    navToggler.addEventListener('click', () => {
+        const isOpen = navCollapse.classList.toggle('show');
+        navToggler.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    // Close the menu after tapping a link (mobile UX)
+    navCollapse.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navCollapse.classList.remove('show');
+            navToggler.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
+
 // ─── Form success feedback ───
 const form = document.querySelector('form');
 if (form) {
