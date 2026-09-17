@@ -18,14 +18,14 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', system-ui, Arial, sans-serif;
     background: var(--cream);
     color: var(--text);
     scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
 
 /* ─── NAVBAR ─── */
@@ -35,7 +35,7 @@ h1, h2, h3 {
     border-bottom: 2px solid var(--spice);
 }
 .navbar-brand {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
     font-size: 1.7rem;
     color: var(--sand) !important;
     letter-spacing: 1px;
@@ -259,7 +259,7 @@ h1, h2, h3 {
     text-align: center;
 }
 .intro-stat .num {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
     font-size: 2.4rem;
     font-weight: 900;
     color: var(--spice);
